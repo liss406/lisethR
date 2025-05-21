@@ -1,10 +1,10 @@
 from django.db import models
 
 class Cancion(models.Model):
-    nombre = models.CharField(max_length=100)
-    genero = models.CharField(max_length=100)
+    titulo = models.CharField(max_length=100)
     artista = models.CharField(max_length=100)
-    duracion= models.IntegerField()
+    duracion = models.IntegerField()
+    genero= models.CharField(max_length=100)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
