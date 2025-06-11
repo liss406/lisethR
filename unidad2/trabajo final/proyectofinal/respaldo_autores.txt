@@ -1,0 +1,12 @@
+Nombre: alex mirez
+Nacionalidad: española
+Edad: 24
+
+Nombre: melisa
+Nacionalidad: colombiana
+Edad: 20
+
+Nombre: melisa
+Nacionalidad: argentina
+Edad: 26
+

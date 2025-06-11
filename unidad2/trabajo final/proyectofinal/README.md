@@ -6,25 +6,30 @@ Este proyecto es una aplicación web desarrollada con Django que permite gestion
 
 -el sistema permite lo siguiente:
 
--resgitrar autores
--registrar libros
+-resgitrar,eliminar y actualizar autores
+-registrar,eliminar y actualizar autores
 -motrar informacion de autores y libros 
 
 
 # estructura del proyecto:
 
-Proyecto final/
-├── backend/
-│   ├── app/
+backend/
+├── app/
 │   ├── autor/
 │   ├── libro/
-│   ├── db.sqlite3
-│   └── manage.py
-├── frontend/
-│   └── main.py
-├── README.md
-├── respaldo_autores.txt
-└── respaldo_libros.txt
+│   ├── db.sqlite3          # Base de datos SQLite del proyecto
+│   └── manage.py           # Script de gestión para la aplicación
+│
+├── front/
+│   ├── controladores/    
+│   ├── modelos/            
+│   └── vistas/             # Vistas e interfaces de usuario
+│
+├── __main__.py             # Punto de entrada principal del proyecto
+├── README.md               # Documentación del proyecto
+├── requirements.txt        # Dependencias necesarias para el entorno
+├── respaldo_autores.txt    # Respaldo de datos de autores
+├── respaldo_libros.txt     # Respaldo de datos de libros
 
 # ejecucion:
 
