@@ -31,35 +31,56 @@ backend/
 ├── respaldo_autores.txt    # Respaldo de datos de autores
 ├── respaldo_libros.txt     # Respaldo de datos de libros
 
-# ejecucion:
 
-### 1. Ejecutar el Backend
+ # Instrucciones para Ejecutar el Proyecto
 
-Desde la raíz del proyecto:
+---
+
+# 1. Ejecutar el Backend
+
+Desde la carpeta `backend/`:
 
 ```bash
 cd backend
 ```
 
-Si es la primera vez que ejecutas el proyecto o has realizado cambios en los modelos, ejecuta:
+---
+
+Si es la **primera vez que se ejecuta** o se **hacen cambios en los modelos**, se ejecuta:
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-Luego, para iniciar el servidor:
+---
+
+Luego, para inicializar el servidor:
 
 ```bash
 python manage.py runserver
 ```
 
-### 2. Ejecutar el Frontend
+---
+
+Esto levantará la API REST en: [`http://127.0.0.1:8000/`]
+
+---
+
+# 2. Ejecutar la Aplicación de Escritorio (Tkinter)
+
+Desde la carpeta `frontend/`:
 
 ```bash
 cd frontend
 python main.py
 ```
+
+---
+
+Esto abrirá la ventana de la aplicación de escritorio, conectada al backend vía la API REST.
+
+---
 
 # requisitos:
 
@@ -69,6 +90,7 @@ python main.py
 
 -*autor* = control de informacion de actores
 -*libro* = registrar la informacion de libros
+-- *app* = Gestión de editoriales.
 -*frontend* = presenta la interfaz (controla la interfaz grafica)
 
 # base de datos:
